@@ -10,8 +10,8 @@ import (
 	"time"
 )
 
-const WINDOW_SIZE = 5
-const MAX_REQUEST_COUNT = 5
+const WINDOW_SIZE = 60 * 60
+const MAX_REQUEST_COUNT = 1000
 
 type RateLimiter struct{}
 type RequestRecord struct {
